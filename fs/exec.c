@@ -1247,7 +1247,7 @@ void install_exec_creds(struct linux_binprm *bprm)
 }
 EXPORT_SYMBOL(install_exec_creds);
 
-static void bprm_fill_uid(struct linux_binprm *bprm)
+static inline void bprm_fill_uid(struct linux_binprm *bprm)
 {
 	struct inode *inode;
 	unsigned int mode;
